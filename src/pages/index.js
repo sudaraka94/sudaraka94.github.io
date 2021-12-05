@@ -6,18 +6,17 @@ import { faGithub, faLinkedin, faMedium, faTwitter } from "@fortawesome/free-bra
 // markup
 const IndexPage = () => {
   return (
-    <div className="bg-white py-8 max-w-xs mx-auto flex flex-col justify-around h-full md:max-w-2xl lg:mt-auto lg:py-40 lg:max-w-3xl xl:max-w-7xl">
-      <div className="flex flex-col justify-evenly md:text-center lg:flex-row-reverse lg:text-left">
-        <div className="w-3/4 m-auto md:flex-grow-0 md:px-5 md:py-3 md:my-auto md:max-w-lg md:m-auto lg:w-1/2 lg:pt-1 lg:p-8 xl:max-w-2xl">
-          <img className="mx-auto rounded-full" src="https://i.imgur.com/gFIllIS.jpeg" alt="Sudaraka Jayathilaka" />
+    <div className="bg-white flex flex-col w-screen h-full max-w-lg text-center mx-auto md:my-1.5 xl:max-w-7xl">
+      <div className="my-auto xl:flex xl:flex-row-reverse">
+        <div className="w-3/5 mx-auto md:w-72 xl:w-1/2">
+          <img className="rounded-full xl:w-4/5 xl:mx-auto xl:h-full" src="https://i.imgur.com/gFIllIS.jpeg" alt="Sudaraka Jayathilaka" />
         </div>
-        <div className="text-3xl md:flex-grow-0 mt-10 md:text-5xl lg:text-3xl lg:w-1/2 xl:text-5xl">
+        <div className="px-8 pt-5 text-3xl text-center md:text-5xl md:max-w-xl md:mx-auto md:mt-10 md:leading-normal xl:w-1/2 xl:text-left xl:mt-0 xl:px-0 xl:pt-0">
           <h1 className="font-extralight">Hello! <span className="animate-bounce">👋</span></h1>
-          <p className="font-extralight pt-4 max-w-xl leading-normal md:mt-3 lg:mt-20">
+          <p className="font-extralight mt-5 xl:mt-20">
             I'm <span className="font-normal">Sudaraka Jayathilaka</span>, a developer who builds stuff that matters 👨🏻‍💻
           </p>
-
-          <div className="max-w-xl mx-auto text-center mt-10 space-x-7 text-gray-600 text-sm md:py-8 md:text-2xl lg:mx-0 lg:text-left lg:text-sm lg:pt-10 xl:text-2xl">
+          <div className="text-gray-600 text-sm space-x-5 mt-10 md:text-2xl md:space-x-7 md:mt-16 lg:text-3xl xl:mt-20 xl:text-2xl">
             <a className="hover:text-gray-900" href="mailto:sudarakayasindu@gmail.com" target="_blank">
               <FontAwesomeIcon icon={faEnvelope} size="2x" />
             </a>
@@ -36,7 +35,7 @@ const IndexPage = () => {
           </div>
         </div>
       </div>
-    </div >
+    </div>
   )
 }
 
