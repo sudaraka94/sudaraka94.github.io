@@ -2,11 +2,15 @@ import * as React from "react"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons"
 import { faGithub, faLinkedin, faMedium, faTwitter } from "@fortawesome/free-brands-svg-icons"
+import { Helmet } from "react-helmet";
 
 // markup
 const IndexPage = () => {
   return (
     <div className="bg-white flex flex-col w-screen h-full max-w-lg text-center mx-auto md:my-1.5 xl:max-w-7xl">
+      <Helmet>
+        <title>Sudaraka Jayathilaka</title>
+      </Helmet>
       <div className="my-auto xl:flex xl:flex-row-reverse">
         <div className="w-3/5 mx-auto md:w-72 xl:w-1/2">
           <img className="rounded-full xl:w-4/5 xl:mx-auto xl:h-full" src="https://i.imgur.com/gFIllIS.jpeg" alt="Sudaraka Jayathilaka" />
