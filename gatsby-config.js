@@ -10,20 +10,25 @@ module.exports = {
         },
         social: [
             {
-                name: `twitter`,
-                url: `https://x.com/sudaraka94`,
+                name: `mailto`,
+                url: `mailto:sudarakayasindu@gmail.com`
             },
             {
                 name: `github`,
                 url: `https://github.com/sudaraka94`,
             },
             {
-                name: `instagram`,
-                url: `https://instagram.com/sudarakayj`,
-            },
-            {
                 name: `linkedin`,
                 url: `https://www.linkedin.com/in/sudarakajayathilaka/`,
+            },
+            {
+                name: `twitter`,
+                url: `https://x.com/sudaraka94`,
+            },
+            {
+                name: `medium`,
+                url: `https://medium.com/@sudarakayasindu`
+
             },
         ],
     },
