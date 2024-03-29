@@ -5,7 +5,7 @@ module.exports = {
         siteUrl: `https://sudaraka94.github.io`,
         description: `I Sudaraka Jayathilaka, a programmer living in Singapore. I blog about experiences navigating through my career as a Software Engineer.`,
         hero: {
-            heading: `Hello 👋, I'm Sudaraka Jayathilaka. \nWelocme to my blog ☕`,
+            heading: `Hello 👋, I'm Sudaraka Jayathilaka. \nWelcome to my blog ☕`,
             maxWidth: 800,
         },
         social: [
