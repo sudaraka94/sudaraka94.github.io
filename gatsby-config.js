@@ -3,7 +3,7 @@ module.exports = {
         title: `Sudaraka Jayathilaka`,
         name: `Sudaraka Jayathilaka`,
         siteUrl: `https://sudaraka94.github.io`,
-        description: `I Sudaraka Jayathilaka, a programmer living in Singapore. I blog about experiences navigating through my career as a Software Engineer.` ,
+        description: `I Sudaraka Jayathilaka, a programmer living in Singapore. I blog about experiences navigating through my career as a Software Engineer.`,
         hero: {
             heading: `Hello 👋, I'm Sudaraka Jayathilaka. \nWelocme to my blog ☕`,
             maxWidth: 800,
@@ -53,6 +53,18 @@ module.exports = {
                     // contentful: true,
                 },
             },
-        }
+        },
+        {
+            resolve: `gatsby-plugin-manifest`,
+            options: {
+                name: `Sudaraka Jayathilaka`,
+                short_name: `Sudaraka Jayathilaka`,
+                start_url: `/`,
+                background_color: `#fff`,
+                theme_color: `#fff`,
+                display: `standalone`,
+                icon: `src/images/sj.png`,
+            },
+        },
     ],
 };

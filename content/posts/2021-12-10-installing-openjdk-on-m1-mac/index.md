@@ -10,11 +10,11 @@ I recently got hold of a M1 MacBook Pro and faced with the challenge of setting 
 spring boot project. Natuarally, I used following commands to check and install the latest jdk using [Homebrew](https://brew.sh/)
 
 #### Checking available Java versions via Homebrew
-```
+```shell
 $ brew seach java
 ```
 Output
-```
+```shell
 ==> Formulae
 app-engine-java                   java                              javacc                            jslint4java                       pdftk-java
 google-java-format                java11                            javarepl                          libreadline-java
@@ -23,11 +23,11 @@ homebrew/cask-versions/java-beta                                                
 ```
 
 #### Checking the details about the Formulae named `java`
-```
+```shell
 $ brew info java
 ```
 Output
-```
+```shell
 openjdk: stable 16.0.1 (bottled) [keg-only]
 Development kit for the Java programming language
 https://openjdk.java.net/
@@ -54,13 +54,13 @@ install-on-request: 41,576 (30 days), 129,753 (90 days), 531,943 (365 days)
 build-error: 0 (30 days)
 ```
 So I saw details and went ahead with installation using,
-```
+```shell
 brew install java
 ```
 
 But then I faced this issue when compiling my spring boot project
 
-```
+```shell
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project reachup-api: Fatal error compiling: java.lang.IllegalAccessError: class lombok.javac.apt.LombokProcessor (in unnamed module @0x486dd616) cannot access class com.sun.tools.javac.processing.JavacProcessingEnvironment (in module jdk.compiler) because module jdk.compiler does not export com.sun.tools.javac.processing to unnamed module @0x486dd616 -> [Help 1]
 ```
 
