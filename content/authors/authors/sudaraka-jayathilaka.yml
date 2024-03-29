@@ -1,11 +1,11 @@
 name: Sudaraka Jayathilaka
 bio: |
-  I mostly code. But sometimes I blog.
+  I am a programmer living in Singapore. I blog about experiences navigating through my career as a Software Engineer.
 avatar: ./avatars/sudaraka-jayathilaka.jpeg
 social:
-  - url: https://unsplash.com
-  - url: https://stackoverflow.com
-  - url: https://github.com
-  - url: https://github.com
-  - url: https://github.com
+  - url: mailto:sudarakayasindu@gmail.com
+  - url: https://github.com/sudaraka94
+  - url: https://www.linkedin.com/in/sudarakajayathilaka
+  - url: https://twitter.com/Sudaraka94
+  - url: https://medium.com/@sudarakayasindu
 featured: true

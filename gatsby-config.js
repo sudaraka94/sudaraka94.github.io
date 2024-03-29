@@ -3,9 +3,9 @@ module.exports = {
         title: `Sudaraka Jayathilaka`,
         name: `Sudaraka Jayathilaka`,
         siteUrl: `https://sudaraka94.github.io`,
-        description: `Sudaraka Jayathilaka` ,
+        description: `I Sudaraka Jayathilaka, a programmer living in Singapore. I blog about experiences navigating through my career as a Software Engineer.` ,
         hero: {
-            heading: `Hello 👋, I'm Sudaraka Jayathilaka. I love building stuff with code.`,
+            heading: `Hello 👋, I'm Sudaraka Jayathilaka. \nWelocme to my blog ☕`,
             maxWidth: 800,
         },
         social: [
