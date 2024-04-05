@@ -42,7 +42,7 @@ module.exports = {
             },
         },
         {
-            resolve: "@narative/gatsby-theme-novela",
+            resolve: "@sudaraka94/gatsby-theme-novela",
             options: {
                 contentPosts: "content/posts",
                 contentAuthors: "content/authors",
