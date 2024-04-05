@@ -66,5 +66,14 @@ module.exports = {
                 icon: `src/images/sj.png`,
             },
         },
+        {
+            resolve: `gatsby-plugin-google-gtag`,
+            options: {
+              // You can add multiple tracking ids and a pageview event will be fired for all of them.
+              trackingIds: [
+                "G-N13ZX3B36R", // Google Analytics / GA
+              ]
+            }
+        }
     ],
 };
