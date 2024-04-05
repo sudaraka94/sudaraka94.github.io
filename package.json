@@ -10,11 +10,11 @@
     "deploy": "gatsby build && gh-pages -d public -b main"
   },
   "dependencies": {
-    "@narative/gatsby-theme-novela": "^0.*",
-    "gatsby-plugin-manifest": "^2.2.4",
-    "gatsby": "^2.31.1",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "@sudaraka94/gatsby-theme-novela": "^1.0.1",
+    "gatsby-plugin-manifest": "^5.13.1",
+    "gatsby": "^5.13.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "gh-pages": "^6.1.1"
