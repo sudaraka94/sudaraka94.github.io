@@ -10,20 +10,29 @@ internal dashboards and the UI tend to be served from the respective microservic
 (or any other service), you need to serve the UI files from the service. But specially in Golang, this used to be not very 
 straight forward. Althogh we can serve files from a certain folder using a static file server feature in Golang, the language was missing the native support to bundle ui files with the service executable. For getting this done, there are several open source golang libraries out there such as,
 
-  - [github.com/alecthomas/gobundle](github.com/alecthomas/gobundle)
-  - [github.com/GeertJohan/go.rice](github.com/GeertJohan/go.rice)
-  - [github.com/go-playground/statics](github.com/go-playground/statics)
-  - [github.com/gobuffalo/packr](github.com/gobuffalo/packr)
-  - [github.com/knadh/stuffbin](github.com/knadh/stuffbin)
-  - [github.com/mjibson/esc](github.com/mjibson/esc)
-  - [github.com/omeid/go-resources](github.com/omeid/go-resources)
-  - [github.com/phogolabs/parcello](github.com/phogolabs/parcello)
-  - [github.com/pyros2097/go-embed](github.com/pyros2097/go)
-  - [github.com/rakyll/statik](github.com/rakyll/statik)
-  - [github.com/shurcooL/vfsgen](github.com/shurcooL/vfsgen)
-  - [github.com/UnnoTed/fileb0x](github.com/UnnoTed/fileb0x)
-  - [github.com/wlbr/templify](github.com/wlbr/templify)
-  - [perkeep.org/pkg/fileembed](perkeep.org/pkg/fileembed)
+ [github.com/alecthomas/gobundle](https://github.com/alecthomas/gobundle)
+ 
+ [github.com/GeertJohan/go.rice](https://github.com/GeertJohan/go.rice)
+ 
+ [github.com/go-playground/statics](https://github.com/go-playground/statics)
+ 
+ [github.com/gobuffalo/packr](https://github.com/gobuffalo/packr)
+ 
+ [github.com/knadh/stuffbin](https://github.com/knadh/stuffbin)
+ 
+ [github.com/mjibson/esc](https://github.com/mjibson/esc)
+ 
+ [github.com/omeid/go-resources](https://github.com/omeid/go-resources)
+ 
+ [github.com/phogolabs/parcello](https://github.com/phogolabs/parcello)
+ 
+ [github.com/rakyll/statik](https://github.com/rakyll/statik)
+ 
+ [github.com/shurcooL/vfsgen](https://github.com/shurcooL/vfsgen)
+ 
+ [github.com/UnnoTed/fileb0x](https://github.com/UnnoTed/fileb0x)
+ 
+ [github.com/wlbr/templify](https://github.com/wlbr/templify)
 
 We we using the packer library from above. On the high level, these libraries serialized all the static content and 
 stored the serialized contents inside `.go` files. So once we update any of the static contents, we had to run a specific command
