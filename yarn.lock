@@ -2436,10 +2436,10 @@
     unfurl.js "^5.1.0"
     unist-util-select "^3.0.1"
 
-"@sudaraka94/gatsby-theme-novela@^1.1.5":
-  version "1.1.5"
-  resolved "https://registry.yarnpkg.com/@sudaraka94/gatsby-theme-novela/-/gatsby-theme-novela-1.1.5.tgz#846a653dcd03df3a7d388928f1a10597cdcfbdb0"
-  integrity sha512-6NVsPKQodlfQDno/C1TboIQvXKPrfwvxqt011i2CrjcJU7LPl1Sdu+5eu9oY9yE79aHhB0keW1u3Lus4/6MRIg==
+"@sudaraka94/gatsby-theme-novela@^1.1.7":
+  version "1.1.7"
+  resolved "https://registry.yarnpkg.com/@sudaraka94/gatsby-theme-novela/-/gatsby-theme-novela-1.1.7.tgz#c6cc781033bd5569ff5ab5c91eedcab4feaa16d7"
+  integrity sha512-AaGcc7THsFb3ZNqVQP0XA7FqGu/94WP9dvrLOJ0hMdWqEwTz1yaY1S+p2rRsCqfzYMCxJ7f2lrtjUdY90WWkaQ==
   dependencies:
     "@emotion/react" "^11.11.4"
     "@emotion/styled" "^11.11.0"
@@ -2477,6 +2477,7 @@
     gatsby-transformer-yaml "^5.13.1"
     lodash "^4.17.21"
     prism-react-renderer "^2.3.1"
+    prismjs "^1.29.0"
     react-helmet "^6.1.0"
     react-live "^4.1.6"
     react-medium-image-zoom "^5.1.11"
@@ -11910,6 +11911,11 @@ prism-react-renderer@^2.0.6, prism-react-renderer@^2.3.1:
   dependencies:
     "@types/prismjs" "^1.26.0"
     clsx "^2.0.0"
+
+prismjs@^1.29.0:
+  version "1.29.0"
+  resolved "https://registry.yarnpkg.com/prismjs/-/prismjs-1.29.0.tgz#f113555a8fa9b57c35e637bba27509dcf802dd12"
+  integrity sha512-Kx/1w86q/epKcmte75LNrEoT+lX8pBpavuAbvJWRXar7Hz8jrtF+e3vY751p0R8H9HdArwaCTNDDzHg/ScJK1Q==
 
 probe-image-size@^7.2.3:
   version "7.2.3"
