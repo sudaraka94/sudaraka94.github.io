@@ -2,7 +2,7 @@ module.exports = {
     siteMetadata: {
         title: `Sudaraka Jayathilaka`,
         name: `Sudaraka Jayathilaka`,
-        siteUrl: `https://sudaraka94.github.io`,
+        siteUrl: `https://sudaraka94.com`,
         description: `I Sudaraka Jayathilaka, a programmer living in Singapore. I blog about experiences navigating through my career as a Software Engineer.`,
         hero: {
             heading: `Hello 👋, I'm Sudaraka Jayathilaka. \nWelcome to my blog ☕`,
