@@ -40,18 +40,18 @@ Now you can see that we are exposing the `myList` object via the `getMyList()` m
 
 ### The Fix
 We can mainly fix this using two approaches. 
-1. Return an unmodifiable list from the `getMyList()` method. You can change the getMyList() method as follows.
-    ```java
-    public List<String> getMyList() {
-        return Collections.unmodifiableList(myList);
-    }
-    ```
-2. Return a copy of the list from the `getMyList()` method. You can change the getMyList() method as follows.
-    ```java
-    public List<String> getMyList() {
-        return List.copyOf(myList);
-    }
-    ```
+- Return an unmodifiable list from the `getMyList()` method. You can change the getMyList() method as follows.
+```java
+public List<String> getMyList() {
+    return Collections.unmodifiableList(myList);
+}
+```
+- Return a copy of the list from the `getMyList()` method. You can change the getMyList() method as follows.
+```java
+public List<String> getMyList() {
+    return List.copyOf(myList);
+}
+```
 
 ## EI_EXPOSE_REP2
 
@@ -76,18 +76,18 @@ encapsulation principle and a security risk.
 
 The fix for this warning is slightly different from the previous warning. You can fix this by,
 
-1. Creating a copy of the list when assigning it to the `myList` variable.
-    ```java
-    public MyClass(List<String> myList) {  
-        this.myList = List.copyOf(myList);
-    }
-    ```
-2. Creating an unmodifiable list when assigning it to the `myList` variable.
-    ```java
-    public MyClass(List<String> myList) {  
-        this.myList = Collections.unmodifiableList(myList);
-    }
-    ```
+- Creating a copy of the list when assigning it to the `myList` variable.
+```java
+public MyClass(List<String> myList) {  
+    this.myList = List.copyOf(myList);
+}
+```
+- Creating an unmodifiable list when assigning it to the `myList` variable.
+ ```java
+ public MyClass(List<String> myList) {  
+     this.myList = Collections.unmodifiableList(myList);
+ }
+ ```
 
 ## Conclusion
 
