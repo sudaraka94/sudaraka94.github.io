@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunknovela_blog=self.webpackChunknovela_blog||[]).push([[304],{6903:function(l,n,u){u.r(n);u(6540);var e=u(1589),o=u(5922),a=u(7028),t=u(2058),r=u(7437);n.default=function(){return(0,r.Y)(e.A,null,(0,r.Y)(a.A,null),(0,r.Y)(o.A,null,(0,r.Y)("div",{style:{marginTop:"100px"}},(0,r.Y)(t.A.h1,null,"404: Page Not Found"))))}}}]);
+//# sourceMappingURL=component---node-modules-sudaraka-94-gatsby-theme-novela-src-pages-404-js-687eaada9e35fa63e736.js.map
