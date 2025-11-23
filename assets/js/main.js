@@ -139,20 +139,30 @@ document.addEventListener('DOMContentLoaded', function () {
   // Add copy button to code blocks
   const codeBlocks = document.querySelectorAll('pre code');
   codeBlocks.forEach(block => {
+    // Find the pre or highlight container
+    const container = block.closest('pre') || block.closest('.highlight');
+    if (!container) return;
+    
     // Check if button already exists (to prevent duplicates on re-runs if any)
-    if (block.parentElement.querySelector('.copy-button')) return;
+    if (container.querySelector('.copy-button')) return;
 
     const button = document.createElement('button');
     button.className = 'copy-button';
-    button.textContent = 'Copy';
+    button.setAttribute('aria-label', 'Copy code');
+    button.setAttribute('title', 'Copy code');
     button.addEventListener('click', () => {
       navigator.clipboard.writeText(block.textContent);
-      button.textContent = 'Copied!';
+      // Change to checkmark icon
+      button.classList.add('copied');
       setTimeout(() => {
-        button.textContent = 'Copy';
+        button.classList.remove('copied');
       }, 2000);
     });
-    block.parentElement.style.position = 'relative';
-    block.parentElement.appendChild(button);
+    
+    // Ensure container has relative positioning
+    if (getComputedStyle(container).position === 'static') {
+      container.style.position = 'relative';
+    }
+    container.appendChild(button);
   });
 });

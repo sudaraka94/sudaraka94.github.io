@@ -17,6 +17,16 @@ author_image: "/assets/images/profile.webp" # Add your profile picture at this p
 # Build settings
 markdown: kramdown
 theme: minima
+
+# Syntax highlighting
+kramdown:
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: 'highlight'
+    span:
+      line_numbers: false
+    block:
+      line_numbers: false
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
