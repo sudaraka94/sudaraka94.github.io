@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://sudaraka94.com/sitemap.xml
