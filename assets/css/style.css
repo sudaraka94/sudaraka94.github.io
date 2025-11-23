@@ -254,8 +254,7 @@ a:hover {
    ======================================== */
 .site-header {
   background-color: var(--color-header-bg);
-  border-bottom: 1px solid var(--color-border);
-  padding: var(--spacing-md) 0;
+  padding: var(--spacing-sm) 0;
   position: sticky;
   top: 0;
   z-index: 100;
@@ -311,9 +310,9 @@ a:hover {
    Footer
    ======================================== */
 .site-footer {
-  background-color: var(--color-surface);
-  border-top: 1px solid var(--color-border);
-  padding: var(--spacing-xl) 0 var(--spacing-md);
+  background-color: transparent;
+  border-top: none;
+  padding: var(--spacing-md) 0;
   margin-top: var(--spacing-xl);
 }
 
@@ -339,10 +338,10 @@ a:hover {
 
 .footer-bottom {
   text-align: center;
-  padding-top: var(--spacing-md);
-  border-top: 1px solid var(--color-border);
+  padding-top: 0;
+  border-top: none;
   color: var(--color-text-light);
-  font-size: 0.875rem;
+  font-size: 0.75rem;
 }
 
 /* ========================================
@@ -811,4 +810,114 @@ time {
 
 .page-content {
   animation: fadeIn 0.5s ease-out;
+}
+
+/* ========================================
+   Landing Page
+   ======================================== */
+.landing-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 400px);
+  padding: var(--spacing-lg) var(--spacing-md);
+}
+
+.landing-content {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.landing-title {
+  font-family: var(--font-serif);
+  font-size: 2.5rem;
+  font-weight: 300;
+  line-height: 1.4;
+  color: var(--color-text);
+  margin-bottom: var(--spacing-lg);
+  letter-spacing: -0.02em;
+}
+
+.landing-subtext {
+  font-family: var(--font-serif);
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--color-text-secondary);
+  margin-bottom: var(--spacing-xl);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.social-links-landing {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-xl);
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: transparent;
+  color: var(--color-text);
+  transition: all var(--transition-base);
+  border: none;
+  outline: none;
+}
+
+.social-link:hover {
+  background-color: var(--color-primary);
+  color: white;
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.social-link svg {
+  width: 24px;
+  height: 24px;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: var(--spacing-xs) var(--spacing-lg);
+  background-color: var(--color-primary);
+  color: white;
+  border-radius: var(--radius-md);
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all var(--transition-base);
+  box-shadow: var(--shadow-sm);
+}
+
+.cta-button:hover {
+  background-color: var(--color-primary-dark);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+  color: white;
+}
+
+/* Responsive adjustments for landing page */
+@media (max-width: 768px) {
+  .landing-title {
+    font-size: 1.75rem;
+  }
+
+  .social-link {
+    width: 44px;
+    height: 44px;
+  }
+
+  .social-link svg {
+    width: 22px;
+    height: 22px;
+  }
 }
