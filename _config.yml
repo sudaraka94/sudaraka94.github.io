@@ -9,6 +9,9 @@ url: "https://sudaraka94.com" # the base hostname & protocol for your site
 twitter_username: sudaraka94
 github_username: sudaraka94
 linkedin_username: sudarakajayathilaka
+image: "/assets/images/profile.webp" # Default image for social sharing
+lang: en
+
 author_image: "/assets/images/profile.webp" # Add your profile picture at this path
 
 # Build settings
