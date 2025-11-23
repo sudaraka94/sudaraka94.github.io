@@ -27,7 +27,7 @@ kramdown:
       line_numbers: false
     block:
       line_numbers: false
-plugins:
+gems:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
