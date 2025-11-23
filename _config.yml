@@ -1,0 +1,57 @@
+# Site settings
+title: Sudaraka Jayathilaka
+email: sudarakayasindu@gmail.com
+description: >- # this means to ignore newlines until "baseurl:"
+  I Sudaraka Jayathilaka, a programmer living in Singapore. 
+  I blog about experiences navigating through my career as a Software Engineer.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://sudaraka94.com" # the base hostname & protocol for your site
+twitter_username: sudaraka94
+github_username: sudaraka94
+linkedin_username: sudarakajayathilaka
+author_image: "/assets/images/profile.webp" # Add your profile picture at this path
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-paginate
+
+# Pagination
+paginate: 10
+paginate_path: "/blog/page:num/"
+
+# Collections
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "Sudaraka Jayathilaka"
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - README.md
+  - .gitignore

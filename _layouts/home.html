@@ -1,0 +1,26 @@
+---
+layout: default
+---
+
+<div class="home">
+    {{ content }}
+
+    <section class="recent-posts">
+        <h2>Recent Posts</h2>
+        <div class="post-list">
+            {% for post in site.posts limit:5 %}
+            <article class="post-preview">
+                <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+                <p class="post-meta">
+                    <time datetime="{{ post.date | date_to_xmlschema }}">
+                        {{ post.date | date: "%B %d, %Y" }}
+                    </time>
+                </p>
+                <p>{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+                <a href="{{ post.url | relative_url }}" class="read-more">Read more →</a>
+            </article>
+            {% endfor %}
+        </div>
+        <a href="{{ '/blog/' | relative_url }}" class="view-all">View all posts →</a>
+    </section>
+</div>
