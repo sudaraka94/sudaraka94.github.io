@@ -14,6 +14,9 @@ lang: en
 
 author_image: "/assets/images/profile.webp" # Add your profile picture at this path
 
+# Google Analytics
+google_analytics: "G-N13ZX3B36R"
+
 # Build settings
 markdown: kramdown
 theme: minima
