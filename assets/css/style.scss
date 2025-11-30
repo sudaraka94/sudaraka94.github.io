@@ -1,0 +1,43 @@
+---
+---
+/* ================================================================
+   MAIN STYLESHEET
+   ================================================================
+   
+   This file imports all CSS partials in the correct order.
+   Jekyll will compile this into a single CSS file.
+   
+   Organization:
+   1. Variables & Design Tokens
+   2. Base Styles & Reset
+   3. Typography
+   4. Layout
+   5. Components
+   6. Utilities
+   7. Responsive Styles
+   ================================================================ */
+
+/* Foundation */
+@import 'variables';
+@import 'base';
+@import 'typography';
+@import 'layout';
+
+/* Components */
+@import 'components/header';
+@import 'components/footer';
+@import 'components/breadcrumbs';
+@import 'components/buttons';
+@import 'components/code';
+@import 'components/posts';
+@import 'components/landing';
+@import 'components/projects';
+@import 'components/tags';
+@import 'components/comments';
+
+/* Syntax Highlighting - Load from original file temporarily */
+@import 'syntax-highlighting-imports';
+
+/* Utilities & Responsive */
+@import 'utilities';
+@import 'responsive';

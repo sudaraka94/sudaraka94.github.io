@@ -1,0 +1,111 @@
+/* ================================================================
+   CODE BLOCKS & SYNTAX DISPLAY
+   ================================================================ */
+
+/**
+ * Code Blocks
+ * Syntax highlighting and code display
+ */
+.post-content pre,
+.post-content code {
+    font-family: var(--font-mono);
+    background-color: var(--color-surface);
+    border-radius: var(--radius-sm);
+}
+
+.post-content pre {
+    position: relative;
+    max-width: 100%;
+    margin: var(--spacing-md) 0;
+    padding: var(--spacing-md);
+    overflow-x: auto;
+}
+
+.post-content code {
+    padding: 0.2em 0.4em;
+    font-size: 0.8em;
+}
+
+.post-content pre code {
+    padding: 0;
+    color: var(--color-text);
+    font-size: 0.8em;
+    font-weight: 400;
+    line-height: 1.6;
+    background: transparent;
+}
+
+/**
+ * Syntax Highlighting Container
+ */
+.post-content .highlight {
+    max-width: 100%;
+    margin: var(--spacing-md) 0;
+    background-color: var(--color-surface);
+    border-radius: var(--radius-sm);
+    overflow-x: auto;
+}
+
+.post-content .highlight pre {
+    position: relative;
+    margin: 0;
+    padding: var(--spacing-md);
+    background: transparent;
+}
+
+/**
+ * Copy Button for Code Blocks
+ */
+.copy-button {
+    position: absolute;
+    top: var(--spacing-xs);
+    right: var(--spacing-xs);
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    font-size: 0;
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    opacity: 0.7;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+}
+
+.copy-button:hover {
+    background-color: var(--color-background);
+    border-color: var(--color-primary);
+    opacity: 1;
+}
+
+.copy-button:active {
+    transform: scale(0.95);
+}
+
+/* Copy button icons */
+.copy-button::before {
+    width: 16px;
+    height: 16px;
+    content: '';
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23242424' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='9' y='9' width='13' height='13' rx='2' ry='2'%3E%3C/rect%3E%3Cpath d='M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1'%3E%3C/path%3E%3C/svg%3E");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: opacity var(--transition-fast);
+}
+
+[data-theme="dark"] .copy-button::before {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23e5e5e5' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='9' y='9' width='13' height='13' rx='2' ry='2'%3E%3C/rect%3E%3Cpath d='M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1'%3E%3C/path%3E%3C/svg%3E");
+}
+
+.copy-button.copied::before {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%231a8917' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");
+}
+
+[data-theme="dark"] .copy-button.copied::before {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%234ade80' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");
+}

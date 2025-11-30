@@ -1,0 +1,26 @@
+/* ================================================================
+   LAYOUT & STRUCTURE
+   ================================================================ */
+
+/**
+ * Wrapper
+ * Main container for content with max-width and padding
+ */
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-md);
+}
+
+/**
+ * Page Content
+ * Main content area with centered, readable width
+ */
+.page-content {
+    position: relative;
+    z-index: 1;
+    max-width: var(--content-width);
+    margin: 0 auto;
+    min-height: calc(100vh - 200px);
+    padding: var(--spacing-xl) 0;
+}

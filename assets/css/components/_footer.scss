@@ -1,0 +1,44 @@
+/* ================================================================
+   FOOTER
+   ================================================================ */
+
+/**
+ * Site Footer
+ * Bottom section with links and copyright
+ */
+.site-footer {
+    position: relative;
+    z-index: 1;
+    margin-top: var(--spacing-xl);
+    padding: var(--spacing-md) 0;
+    background-color: transparent;
+    border-top: none;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-lg);
+    margin-bottom: var(--spacing-lg);
+}
+
+.footer-col h3 {
+    margin-bottom: var(--spacing-sm);
+    font-size: 1.125rem;
+}
+
+.social-links {
+    list-style: none;
+}
+
+.social-links li {
+    margin-bottom: var(--spacing-xs);
+}
+
+.footer-bottom {
+    padding-top: 0;
+    color: var(--color-text-light);
+    font-size: 0.75rem;
+    text-align: center;
+    border-top: none;
+}
