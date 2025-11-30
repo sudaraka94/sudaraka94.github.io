@@ -1,0 +1,40 @@
+/* ================================================================
+   RESET & BASE STYLES
+   ================================================================ */
+
+/**
+ * Universal box-sizing reset
+ * Ensures padding and borders are included in element dimensions
+ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/**
+ * Root HTML element
+ * Sets base font size and enables smooth scrolling
+ */
+html {
+    font-size: var(--font-size-base);
+    scroll-behavior: smooth;
+    height: 100%;
+}
+
+/**
+ * Body element
+ * Establishes default typography and smoothing
+ */
+body {
+    font-family: var(--font-serif);
+    font-size: var(--font-size-base);
+    line-height: var(--line-height-base);
+    color: var(--color-text);
+    background-color: var(--color-background);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    letter-spacing: -0.003em;
+    word-break: break-word;
+    word-wrap: break-word;
+}

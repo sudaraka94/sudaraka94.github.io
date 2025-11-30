@@ -30,6 +30,12 @@ kramdown:
       line_numbers: false
     block:
       line_numbers: false
+
+# Sass configuration
+sass:
+  load_paths:
+    - assets/css
+
 gems:
   - jekyll-feed
   - jekyll-seo-tag

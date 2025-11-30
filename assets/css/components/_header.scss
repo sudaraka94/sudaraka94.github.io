@@ -1,0 +1,107 @@
+/* ================================================================
+   HEADER & NAVIGATION
+   ================================================================ */
+
+/**
+ * Site Header
+ * Sticky header with backdrop blur effect
+ */
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    padding: var(--spacing-sm) 0;
+    background-color: var(--color-header-bg);
+    backdrop-filter: blur(10px);
+}
+
+.site-header .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/**
+ * Site Title/Logo
+ */
+.site-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-text);
+    text-decoration: none;
+}
+
+/**
+ * Main Navigation
+ */
+.site-nav {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+}
+
+.nav-trigger {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+}
+
+.trigger {
+    display: flex;
+    gap: var(--spacing-md);
+}
+
+/**
+ * Navigation Links
+ */
+.page-link {
+    padding: var(--spacing-xs) var(--spacing-sm);
+    color: var(--color-text);
+    font-weight: 500;
+    border-radius: var(--radius-sm);
+    transition: all var(--transition-fast);
+}
+
+.page-link:hover {
+    background-color: var(--color-surface);
+    color: var(--color-primary);
+}
+
+/**
+ * Header Actions (Theme toggle, Copy link, etc.)
+ */
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    margin-left: auto;
+}
+
+/**
+ * Anchor Links for Headings
+ * Appears on hover next to headings for direct linking
+ */
+.anchor-link {
+    position: absolute;
+    left: -24px;
+    padding-right: 4px;
+    opacity: 0;
+    color: var(--color-text-light);
+    font-weight: normal;
+    text-decoration: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: opacity var(--transition-fast);
+}
+
+h1:hover .anchor-link,
+h2:hover .anchor-link,
+h3:hover .anchor-link,
+h4:hover .anchor-link,
+h5:hover .anchor-link,
+h6:hover .anchor-link {
+    opacity: 1;
+}

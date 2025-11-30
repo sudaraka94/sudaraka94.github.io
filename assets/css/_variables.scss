@@ -1,0 +1,105 @@
+/* ================================================================
+   CSS VARIABLES & DESIGN TOKENS
+   ================================================================ */
+
+/**
+ * Root-level CSS custom properties for consistent theming
+ * All design tokens are centralized here for easy maintenance
+ */
+:root {
+    /* ============== Color Palette ============== */
+    /* Primary brand colors */
+    --color-primary: #1a8917;
+    --color-primary-dark: #156d13;
+    --color-secondary: #6B6B6B;
+    --color-accent: #0066CC;
+
+    /* Text colors */
+    --color-text: #242424;
+    --color-text-secondary: #6B6B6B;
+    --color-text-light: #757575;
+
+    /* Background colors */
+    --color-background: #ffffff;
+    --color-surface: #F7F7F7;
+    --color-header-bg: rgba(255, 255, 255, 0.9);
+
+    /* Border & divider colors */
+    --color-border: #E6E6E6;
+    --color-divider: #F2F2F2;
+
+    /* Special effects */
+    --particle-color: rgba(26, 137, 23, 0.4);
+
+    /* ============== Typography ============== */
+    /* Font stacks optimized for readability */
+    --font-serif: 'Charter', 'Bitstream Charter', 'Sitka Text', 'Cambria', 'Merriweather', 'Georgia', serif;
+    --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    --font-mono: 'Menlo', 'Monaco', 'Courier New', monospace;
+
+    /* Base font sizing */
+    --font-size-base: 20px;
+    --line-height-base: 1.6;
+
+    /* ============== Spacing Scale ============== */
+    /* 8px base unit, following Medium's generous spacing */
+    --spacing-xs: 8px;
+    --spacing-sm: 16px;
+    --spacing-md: 24px;
+    --spacing-lg: 32px;
+    --spacing-xl: 48px;
+    --spacing-xxl: 64px;
+
+    /* ============== Layout Dimensions ============== */
+    --content-width: 700px;
+    --wide-content-width: 1192px;
+
+    /* ============== Border Radius ============== */
+    --radius-sm: 4px;
+    --radius-md: 6px;
+    --radius-lg: 8px;
+
+    /* ============== Shadows ============== */
+    /* Subtle, Medium-style elevation */
+    --shadow-sm: 0 1px 4px rgba(0, 0, 0, 0.04);
+    --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
+    --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.12);
+
+    /* ============== Transitions ============== */
+    --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-base: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/**
+ * Dark mode theme overrides
+ * Applies brighter colors and adjusted contrast for dark theme
+ */
+[data-theme="dark"] {
+    /* Primary colors - brighter for dark backgrounds */
+    --color-primary: #4ade80;
+    --color-primary-dark: #22c55e;
+    --color-secondary: #a3a3a3;
+    --color-accent: #60a5fa;
+
+    /* Text colors - light on dark */
+    --color-text: #e5e5e5;
+    --color-text-secondary: #a3a3a3;
+    --color-text-light: #737373;
+
+    /* Background colors - dark variants */
+    --color-background: #121212;
+    --color-surface: #1e1e1e;
+    --color-header-bg: rgba(18, 18, 18, 0.9);
+
+    /* Border & divider colors - lighter for contrast */
+    --color-border: #333333;
+    --color-divider: #262626;
+
+    /* Special effects */
+    --particle-color: rgba(74, 222, 128, 0.4);
+
+    /* Shadows - stronger for depth on dark backgrounds */
+    --shadow-sm: 0 1px 4px rgba(0, 0, 0, 0.2);
+    --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.3);
+    --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.4);
+}
