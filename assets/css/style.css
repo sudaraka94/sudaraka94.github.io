@@ -482,6 +482,7 @@ a:hover {
   overflow-x: auto;
   margin: var(--spacing-md) 0;
   position: relative;
+  max-width: 100%;
 }
 
 .post-content code {
@@ -505,6 +506,7 @@ a:hover {
   border-radius: var(--radius-sm);
   margin: var(--spacing-md) 0;
   overflow-x: auto;
+  max-width: 100%;
 }
 
 .post-content .highlight pre {
@@ -1836,14 +1838,34 @@ time {
     padding-bottom: var(--spacing-xs);
     /* Reduced */
     min-height: auto;
+    overflow-x: hidden;
   }
 
-  /* Ensure wrapper inside page-content grows */
-  .page-content>.wrapper {
+  /* Ensure wrapper inside page-content grows and doesn't overflow */
+
+
+  /* Ensure all wrappers grow and doesn't overflow */
+  .wrapper {
     flex: 1;
     display: flex;
     flex-direction: column;
     width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+
+  .page-content {
+    overflow-x: hidden;
+    width: 100%;
+  }
+
+  .post,
+  .post-content {
+    min-width: 0;
+    max-width: 100%;
+    box-sizing: border-box;
   }
 
   .landing-page {
@@ -1888,6 +1910,16 @@ time {
 
   .site-header {
     padding: var(--spacing-xs) 0;
+  }
+
+  .site-header .wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-height: auto;
+    /* Reset min-height if inherited */
+    flex: 0 0 auto;
+    /* Don't let header wrapper expand like page content wrapper */
   }
 
   .cta-button {
